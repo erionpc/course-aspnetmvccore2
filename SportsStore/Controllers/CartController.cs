@@ -34,7 +34,7 @@ namespace SportsStore.Controllers
             {
                 cart.AddItem(product, 1);
             }
-            return RedirectToAction("Index", new { returnUrl });//b
+            return RedirectToAction("Index", new { returnUrl });
         }
 
         public RedirectToActionResult RemoveFromCart(int productId, string returnUrl)
